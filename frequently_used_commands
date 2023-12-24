@@ -18,7 +18,7 @@ autorandr --change
 ## change to mobile mode (only laptop)
 autorandr mobile
 ## change to with-monitor  mode (laptop + monitor to the right)
-autorandr --change
+autorandr with-monitor
 ## forche change to mobile mode
 autorandr mobile --force
 
