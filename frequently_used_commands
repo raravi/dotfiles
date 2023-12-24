@@ -1,0 +1,32 @@
+========================================================================================
+			Frequently Used Commands (FUCs :grin:)
+========================================================================================
+
+# spotifyd user service
+## check status
+systemctl --user status spotifyd.service
+## restart service
+systemctl --user restart spotifyd
+## Check logs since last boot
+journalctl -b -g "spotify"
+
+# autorandr - monitor setup
+## auto detect
+autorandr
+## auto detect & change
+autorandr --change
+## change to mobile mode (only laptop)
+autorandr mobile
+## change to with-monitor  mode (laptop + monitor to the right)
+autorandr --change
+## forche change to mobile mode
+autorandr mobile --force
+
+# nitrogen - reload wallpapers
+nitrogen --restore &
+
+# NVidia driver
+## limit cpu clock
+sudo nvidia-smi --lock-gpu-clocks=0,1695 --mode=1
+## check nvidia onetime service ran successfully
+systemctl status nvidia-core-clock.service
