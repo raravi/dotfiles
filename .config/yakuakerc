@@ -1,0 +1,16 @@
+[Appearance]
+Blur=true
+Skin=breath-dark
+Translucency=true
+
+[AutoOpen]
+PollMouse=true
+
+[Dialogs]
+FirstRun=false
+
+[Window]
+KeepOpen=false
+Position=79
+ShowSystrayIcon=false
+Width=60
