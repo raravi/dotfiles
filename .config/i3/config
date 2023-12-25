@@ -236,8 +236,10 @@ set $script-dir /home/$USER/.config/i3/blocklets
 bar {
         status_command SCRIPT_DIR=$script-dir i3blocks -c /home/$USER/.config/i3/i3blocks.conf
         i3bar_command i3bar --transparency
-        font pango: Droid Sans Mono 10
-        #height 30
+        #font pango: Droid Sans Mono 10
+        font pango: Monocraft 9
+        #font pango: JetBrains Mono 10
+        height 26
         colors {
                 background $bgcolor
                 separator #191919
