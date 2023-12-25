@@ -47,9 +47,9 @@ exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
 exec --no-startup-id nm-applet
 
 #Hide window title bar
-default_border pixel 1
-default_floating_border pixel 1
-for_window [class="^.*"] border pixel 1
+#default_border pixel 1
+#default_floating_border pixel 1
+#for_window [class="^.*"] border pixel 1
 
 # Use pactl to adjust volume in PulseAudio.
 set $refresh_i3status killall -SIGUSR1 i3status
@@ -187,11 +187,12 @@ workspace 3 output primary
 workspace 4 output primary
 
 # Open Apps
-exec i3-msg 'exec alacritty -e spt'
-exec i3-msg 'exec alacritty -e nnn'
-exec i3-msg 'exec alacritty'
+exec alacritty -o "window.title='SpotifyTUI'" -e spt
+exec alacritty -o "window.title='nCubed'" -e nnn -H
+exec alacritty -o "window.title='Alacritty'"
 exec i3-msg 'exec firefox'
-
+# The below command has problems with escaping of quotes
+# exec i3-msg 'exec alacritty -o "window.title=\'nCubed\'" -e nnn -H'
 
 # reload the configuration file
 bindsym $mod+Shift+c reload
@@ -392,3 +393,6 @@ mode "$mode_gaps_left" {
 
 # Transparency with picom compositor
 exec_always picom -f
+
+# Focus Alacritty terminal - Doesnt work, Firefox always has focus
+# exec i3-msg "sleep 3 && [title='^Alacritty$'] focus"

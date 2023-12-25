@@ -32,10 +32,10 @@
                     "percent": 1,
                     "swallows": [
                        {
-                           "class": "^Alacritty$"
+                           "class": "^Alacritty$",
                        // "instance": "^Alacritty$",
                        // "machine": "^rArAviz\\-Blade\\-Manjaro$",
-                       // "title": "^spt$"
+                           "title": "^SpotifyTUI$"
                        }
                     ],
                     "type": "con"
@@ -57,10 +57,10 @@
             "percent": 0.5,
             "swallows": [
                {
-                   "class": "^Alacritty$"
+                   "class": "^Alacritty$",
+                   "title": "^nCubed$"
                // "instance": "^Alacritty$",
                // "machine": "^rArAviz\\-Blade\\-Manjaro$",
-               // "title": "^i3\\-save\\-tree\\ \\-\\-workspace\\ 1\\ \\>\\ \\~\\/\\.config\\/i3\\/layouts\\/workspace\\-1\\.json$"
                }
             ],
             "type": "con"
