@@ -23,3 +23,6 @@ size = 6
   family = "DejaVu Sans Mono"
   style = "Bold Oblique"
 
+[window.padding]
+x = 6
+y = 6
