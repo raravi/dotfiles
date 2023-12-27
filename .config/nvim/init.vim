@@ -27,3 +27,6 @@ set termguicolors
 " Set Theme
 colorscheme tokyonight-night
 
+" Enable Spellchecking
+set spell spelllang=en_us
+
