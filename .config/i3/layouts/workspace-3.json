@@ -14,11 +14,11 @@
     "percent": 0.7,
     "swallows": [
        {
-           "class": "^firefox$"
+       // "class": "^brave-browser$",
        // "instance": "^Navigator$",
        // "machine": "^rArAviz\\-Blade\\-Manjaro$",
        // "title": "^ProtonDB\\ \\|\\ Gaming\\ know\\-how\\ from\\ the\\ Linux\\ and\\ Steam\\ Deck\\ community\\ \\—\\ Mozilla\\ Firefox$",
-       // "window_role": "^browser$"
+           "window_role": "^browser$"
        }
     ],
     "type": "con"

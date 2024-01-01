@@ -175,11 +175,11 @@ exec --no-startup-id "i3-msg 'workspace 1; append_layout /home/raravi/.config/i3
 exec --no-startup-id "i3-msg 'workspace 3; append_layout /home/raravi/.config/i3/layouts/workspace-3.json'"
 
 # Always open some programs on specified workspace
-assign [class="^Alacritty"]   1
-assign [class="^kate"]        2
-assign [class="^firefox"]     3
-assign [class="^steam"]       3
-assign [class="^heroic"]      3
+assign [class="^Alacritty"]         1
+assign [class="^kate"]              2
+assign [class="^brave-browser"]     3
+assign [class="^steam"]             3
+assign [class="^heroic"]            3
 
 # Always open workspaces in certain outputs
 workspace 1 output eDP-1
@@ -191,7 +191,7 @@ workspace 4 output primary
 exec alacritty -o "window.title='SpotifyTUI'" -e spt
 exec alacritty -o "window.title='nCubed'" -e nnn -H
 exec alacritty -o "window.title='Alacritty'"
-exec i3-msg 'exec firefox'
+exec i3-msg 'exec brave'
 exec i3-msg 'exec heroic'
 exec i3-msg 'exec steam'
 # The below command has problems with escaping of quotes
