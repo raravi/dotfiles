@@ -15,7 +15,7 @@ fi
 source /usr/share/nvm/init-nvm.sh
 
 # Use nano
-export EDITOR="nano"
+export EDITOR="nvim"
 
 # For saving dot files
 alias config='/usr/bin/git --git-dir=/home/raravi/.myconfig/ --work-tree=/home/raravi'
