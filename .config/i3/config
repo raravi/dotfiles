@@ -35,6 +35,10 @@ exec_always "setxkbmap -layout us,de -option 'grp:alt_shift_toggle'"
 # Enable Easy Effects
 exec_always easyeffects --gapplication-service
 
+# Unlocking KWallet automatically in a window manager
+# To unlock KWallet protected by the login password, it is necessary to add
+exec --no-startup-id /usr/lib/pam_kwallet_init
+
 # The combination of xss-lock, nm-applet and pactl is a popular choice, so
 # they are included here as an example. Modify as you see fit.
 
