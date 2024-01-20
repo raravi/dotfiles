@@ -38,3 +38,8 @@ systemctl --user status spotifyd.service
 systemctl --user restart spotifyd
 ## Check logs since last boot
 journalctl -b -g "spotify"
+
+# Betterlockscreen
+## update picture to use for lock screen
+betterlockscreen -u ~/Pictures/Walls/tokyo_pink.png
+
