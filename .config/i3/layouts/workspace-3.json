@@ -10,14 +10,14 @@
        "y": 0
     },
     "marks": [],
-    "name": "Firefox",
+    "name": "Browser",
     "percent": 0.7,
     "swallows": [
        {
-       // "class": "^brave-browser$",
-       // "instance": "^Navigator$",
+       // "class": "^Brave\\-browser$",
+       // "instance": "^brave\\-browser$",
        // "machine": "^rArAviz\\-Blade\\-Manjaro$",
-       // "title": "^ProtonDB\\ \\|\\ Gaming\\ know\\-how\\ from\\ the\\ Linux\\ and\\ Steam\\ Deck\\ community\\ \\—\\ Mozilla\\ Firefox$",
+       // "title": "^window\\ manager\\ \\-\\ Populate\\ an\\ entire\\ pre\\-configured\\ workspace\\ in\\ i3wm\\ \\-\\ Unix\\ \\&\\ Linux\\ Stack\\ Exchange\\ \\-\\ Brave$",
            "window_role": "^browser$"
        }
     ],
@@ -25,7 +25,7 @@
 }
 
 {
-    // splitv split container with 2 children
+    // splitv split container with 1 children
     "border": "pixel",
     "floating": "auto_off",
     "layout": "splitv",
@@ -38,30 +38,6 @@
             "current_border_width": 1,
             "floating": "auto_off",
             "geometry": {
-               "height": 498,
-               "width": 931,
-               "x": 967,
-               "y": 534
-            },
-            "marks": [],
-            "name": "Heroic Games Launcher",
-            "percent": 0.5,
-            "swallows": [
-               {
-                   "class": "^heroic$"
-               // "instance": "^heroic$",
-               // "machine": "^rArAviz\\-Blade\\-Manjaro$",
-               // "title": "^Heroic\\ Games\\ Launcher$",
-               // "window_role": "^browser\\-window$"
-               }
-            ],
-            "type": "con"
-        },
-        {
-            "border": "pixel",
-            "current_border_width": 1,
-            "floating": "auto_off",
-            "geometry": {
                "height": 1374,
                "width": 751,
                "x": 2994,
@@ -69,7 +45,7 @@
             },
             "marks": [],
             "name": "Steam",
-            "percent": 0.5,
+            "percent": 1,
             "swallows": [
                {
                    "class": "^steam$"
