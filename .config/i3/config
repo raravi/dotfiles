@@ -52,7 +52,10 @@ exec --no-startup-id xss-lock --transfer-sleep-lock -- betterlockscreen -l
 
 # NetworkManager is the most popular way to manage wireless networks on Linux,
 # and nm-applet is a desktop environment-independent system tray GUI for it.
-exec --no-startup-id nm-applet
+exec --no-startup-id nm-applet --indicator
+
+# Bluetooth Manager
+exec --no-startup-id blueman-applet
 
 #Hide window title bar
 default_border pixel 1
@@ -196,11 +199,12 @@ workspace 3 output primary
 workspace 4 output primary
 
 # Open Apps
-exec alacritty -o "window.title='SpotifyTUI'" -e spt
-exec alacritty -o "window.title='nCubed'" -e nnn -H
+exec i3-msg 'exec spotify'
+#exec alacritty -o "window.title='SpotifyTUI'" -e spt
+#exec alacritty -o "window.title='nCubed'" -e nnn -H
 exec alacritty -o "window.title='Alacritty'"
 exec i3-msg 'exec brave'
-exec i3-msg 'exec heroic'
+#exec i3-msg 'exec heroic'
 exec i3-msg 'exec steam'
 # The below command has problems with escaping of quotes
 # exec i3-msg 'exec alacritty -o "window.title=\'nCubed\'" -e nnn -H'
