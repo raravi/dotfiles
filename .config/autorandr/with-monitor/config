@@ -23,5 +23,5 @@ primary
 crtc 1
 mode 2560x1440
 pos 1920x0
-rate 120.00
+rate 144.00
 x-prop-non_desktop 0
