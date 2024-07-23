@@ -57,6 +57,9 @@ exec --no-startup-id nm-applet --indicator
 # Bluetooth Manager
 exec --no-startup-id blueman-applet
 
+# Notification Daemon & Center
+exec --no-startup-id deadd-notification-center
+
 #Hide window title bar
 default_border pixel 1
 default_floating_border pixel 1
@@ -81,6 +84,9 @@ bindsym $mod+Return exec alacritty
 
 # kill focused window
 bindsym $mod+Shift+q kill
+
+# Toggle Show / Hide state of Deadd Notification Center
+bindsym $mod+n exec --no-startup-id kill -s USR1 $(pidof deadd-notification-center)
 
 # start dmenu (a program launcher)
 # bindsym $mod+d exec --no-startup-id dmenu_run
