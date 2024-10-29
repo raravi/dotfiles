@@ -8,6 +8,21 @@ colorscheme tokyonight-night
 
 ]])
 
+require('neo-tree').setup {
+  source_selector = {
+    winbar = true,
+    statusline = false
+  }
+}
+
+require('gitsigns').setup {
+  current_line_blame = true,
+}
+
+require('neogit').setup {
+  kind = "split_below_all"
+}
+
 vim.opt.number         = true       -- line numbering
 vim.opt.tabstop        = 2          -- tab space
 
@@ -30,6 +45,7 @@ vim.opt.syntax         = "on"
 -- Enabling true color terminal allows Neovim to utilize 24-bit RGB color values, providing 
 -- a more extensive and accurate range of colors
 vim.opt.termguicolors  = true
+require("bufferline").setup{}
 
 -- Enable Spellchecking
 vim.opt.spell          = true
