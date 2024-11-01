@@ -4,20 +4,21 @@
     "current_border_width": 1,
     "floating": "auto_off",
     "geometry": {
-       "height": 1012,
-       "width": 1878,
-       "x": 21,
-       "y": 21
+       "height": 1016,
+       "width": 931,
+       "x": 19,
+       "y": 19
     },
     "marks": [],
     "name": "Spotify Premium",
-    "percent": 0.5,
+    "percent": 0.45,
     "swallows": [
        {
-           "class": "^Spotify$"
+            "class": "^Spotify$"
        // "instance": "^spotify$",
        // "machine": "^rArAviz\\-Blade\\-Manjaro$",
-       // "title": "^Spotify\\ Premium$"
+       // "title": "^Spotify\\ Premium$",
+       // "window_role": "^spotify$"
        }
     ],
     "type": "con"
@@ -34,14 +35,14 @@
        "y": 0
     },
     "marks": [],
-    "name": "i3-save-tree --workspace 1 > ~/.config/i3/layouts/workspace-11.json",
-    "percent": 0.5,
+    "name": "Terminal",
+    "percent": 0.55,
     "swallows": [
        {
-           "class": "^Alacritty$"
+            "class": "^Alacritty$"
        // "instance": "^Alacritty$",
        // "machine": "^rArAviz\\-Blade\\-Manjaro$",
-       // "title": "^i3\\-save\\-tree\\ \\-\\-workspace\\ 1\\ \\>\\ \\~\\/\\.config\\/i3\\/layouts\\/workspace\\-11\\.json$"
+       // "title": "^i3\\-save\\-tree\\ \\-\\-workspace\\ 1\\ \\>\\ \\~\\/\\.config\\/i3\\/layouts\\/workspace\\-1\\.json$"
        }
     ],
     "type": "con"

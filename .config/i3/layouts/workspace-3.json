@@ -10,52 +10,42 @@
        "y": 0
     },
     "marks": [],
-    "name": "Browser",
-    "percent": 0.7,
+    "name": "Zen Browser",
+    "percent": 0.65,
     "swallows": [
        {
-       // "class": "^Brave\\-browser$",
-       // "instance": "^brave\\-browser$",
+       // "class": "^zen\\-alpha$",
+       // "instance": "^Navigator$",
        // "machine": "^rArAviz\\-Blade\\-Manjaro$",
-       // "title": "^window\\ manager\\ \\-\\ Populate\\ an\\ entire\\ pre\\-configured\\ workspace\\ in\\ i3wm\\ \\-\\ Unix\\ \\&\\ Linux\\ Stack\\ Exchange\\ \\-\\ Brave$",
-           "window_role": "^browser$"
+       // "title": "^crime\\ patrol\\ 2\\.0\\ episode\\ 215\\ \\-\\ YouTube\\ \\—\\ Zen\\ Browser$",
+            "window_role": "^browser$"
        }
     ],
     "type": "con"
 }
 
 {
-    // splitv split container with 1 children
     "border": "pixel",
+    "current_border_width": 1,
     "floating": "auto_off",
-    "layout": "splitv",
+    "geometry": {
+       "height": 1376,
+       "width": 995,
+       "x": 3466,
+       "y": 19
+    },
     "marks": [],
-    "percent": 0.3,
-    "type": "con",
-    "nodes": [
-        {
-            "border": "pixel",
-            "current_border_width": 1,
-            "floating": "auto_off",
-            "geometry": {
-               "height": 1374,
-               "width": 751,
-               "x": 2994,
-               "y": 20
-            },
-            "marks": [],
-            "name": "Steam",
-            "percent": 1,
-            "swallows": [
-               {
-                   "class": "^steam$"
-               // "instance": "^steamwebhelper$",
-               // "machine": "^rArAviz\\-Blade\\-Manjaro$",
-               // "title": "^Steam$"
-               }
-            ],
-            "type": "con"
-        }
-    ]
+    "name": "Discord",
+    "percent": 0.35,
+    "swallows": [
+       {
+       // "instance": "^discord$",
+       // "machine": "^rArAviz\\-Blade\\-Manjaro$",
+            "title": "^Discord$",
+       // "window_role": "^browser\\-window$"
+            "class": "^discord$"
+       }
+    ],
+    "type": "con"
 }
 

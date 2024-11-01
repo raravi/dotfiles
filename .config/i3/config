@@ -195,8 +195,10 @@ exec --no-startup-id "i3-msg 'workspace 3; append_layout /home/raravi/.config/i3
 assign [class="^Alacritty"]         1
 assign [class="^kate"]              2
 assign [class="^brave-browser"]     3
+assign [class="^zen-alpha"]         3
 assign [class="^steam"]             3
 assign [class="^heroic"]            3
+assign [class="^discord"]           3
 
 # Always open workspaces in certain outputs
 workspace 1 output eDP-1-1
@@ -209,9 +211,11 @@ exec i3-msg 'exec spotify'
 #exec alacritty -o "window.title='SpotifyTUI'" -e spt
 #exec alacritty -o "window.title='nCubed'" -e nnn -H
 exec alacritty -o "window.title='Alacritty'"
-exec i3-msg 'exec brave'
-#exec i3-msg 'exec heroic'
-exec i3-msg 'exec steam'
+# exec i3-msg 'exec brave'
+exec i3-msg 'exec zen-browser'
+# exec i3-msg 'exec heroic'
+# exec i3-msg 'exec steam'
+exec i3-msg 'exec discord'
 # The below command has problems with escaping of quotes
 # exec i3-msg 'exec alacritty -o "window.title=\'nCubed\'" -e nnn -H'
 
@@ -230,16 +234,16 @@ mode "resize" {
         # Pressing right will grow the window’s width.
         # Pressing up will shrink the window’s height.
         # Pressing down will grow the window’s height.
-        bindsym j resize shrink width 10 px or 10 ppt
-        bindsym k resize grow height 10 px or 10 ppt
-        bindsym l resize shrink height 10 px or 10 ppt
-        bindsym odiaeresis resize grow width 10 px or 10 ppt
+        bindsym j resize shrink width 10 px or 5 ppt
+        bindsym k resize grow height 10 px or 5 ppt
+        bindsym l resize shrink height 10 px or 5 ppt
+        bindsym odiaeresis resize grow width 10 px or 5 ppt
 
         # same bindings, but for the arrow keys
-        bindsym Left resize shrink width 10 px or 10 ppt
-        bindsym Down resize grow height 10 px or 10 ppt
-        bindsym Up resize shrink height 10 px or 10 ppt
-        bindsym Right resize grow width 10 px or 10 ppt
+        bindsym Left resize shrink width 10 px or 5 ppt
+        bindsym Down resize grow height 10 px or 5 ppt
+        bindsym Up resize shrink height 10 px or 5 ppt
+        bindsym Right resize grow width 10 px or 5 ppt
 
         # back to normal: Enter or Escape or $mod+r
         bindsym Return mode "default"
@@ -289,8 +293,8 @@ client.focused_inactive $in-bgcolor     $in-bgcolor     $in-text        $in-bgco
 client.urgent           $u-bgcolor      $u-bgcolor      $text           $u-bgcolor
 
 # default gaps
-gaps inner 15
-gaps outer 5
+gaps inner 18
+gaps outer 0
 
 # gaps
 set $mode_gaps Gaps: (o)uter, (i)nner, (h)orizontal, (v)ertical, (t)op, (r)ight, (b)ottom, (l)eft
