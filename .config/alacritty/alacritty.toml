@@ -7,6 +7,10 @@ shell = "zsh"
 [font]
 size = 6
 
+  [font.offset]
+  x = 0
+  y = 2
+
   [font.normal]
   family = "DejaVu Sans Mono"
   style = "Book"
