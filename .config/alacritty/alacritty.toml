@@ -9,7 +9,7 @@ size = 6
 
   [font.offset]
   x = 0
-  y = 2
+  y = 3
 
   [font.normal]
   family = "DejaVu Sans Mono"
