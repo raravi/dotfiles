@@ -17,6 +17,9 @@ source /usr/share/nvm/init-nvm.sh
 # Use nano
 export EDITOR="nvim"
 
+# LSD - LS replacement
+alias ls="lsd"
+
 # Copy file content to clipboard
 alias cpc="xclip -sel c < "
 
