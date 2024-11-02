@@ -26,5 +26,7 @@ call plug#begin('~/.config/nvim/autoload/plugged')
 
   Plug 'akinsho/bufferline.nvim', { 'tag': '*' }
 
+  Plug 'kdheepak/lazygit.nvim'
+
 call plug#end()
 
