@@ -293,6 +293,9 @@ client.unfocused        $in-bgcolor     $in-bgcolor     $in-text        $in-bgco
 client.focused_inactive $in-bgcolor     $in-bgcolor     $in-text        $in-bgcolor
 client.urgent           $u-bgcolor      $u-bgcolor      $text           $u-bgcolor
 
+# border
+#Active window border replacement for window managers.for_window [instance = "__focused__"] border pixel 4
+
 # default gaps
 gaps inner 18
 gaps outer 0

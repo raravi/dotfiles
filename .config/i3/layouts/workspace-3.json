@@ -41,7 +41,7 @@
        {
        // "instance": "^discord$",
        // "machine": "^rArAviz\\-Blade\\-Manjaro$",
-            "title": "^Discord$",
+       //     "title": "^Discord$",
        // "window_role": "^browser\\-window$"
             "class": "^discord$"
        }
